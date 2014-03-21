@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15.0sp"
+        android:shrinkColumns="1"
+        android:stretchColumns="1" >
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TableRow
+            android:id="@+id/isbnRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/isbnTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISBN" />
+
+            <EditText
+                android:id="@+id/isbnEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="10 or 13 digit ISBN"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/isbnButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="searchByISBN"
+                android:text=">" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/titleRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+            <EditText
+                android:id="@+id/titleEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="English"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/titleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="searchByTitle"
+                android:text=">" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/authorRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/authorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author" />
+
+            <EditText
+                android:id="@+id/authorEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Author&apos;s Name"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/authorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="searchByAuthor"
+                android:text=">" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/keywordRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/keywordTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keyword" />
+
+            <EditText
+                android:id="@+id/keywordEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Keyword"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/keywordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="searchByKeyword"
+                android:text=">" />
+        </TableRow>
+
+        
+    </TableLayout>
+
+<!-- ImageButton
+        android:id="@+id/historyButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clickable="false"
+        android:onClick="showHistory"
+        android:src="@drawable/ic_menu_archive" /-->
+
+</FrameLayout>

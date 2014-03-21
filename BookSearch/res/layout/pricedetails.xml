@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.8">
+        <TextView android:id="@+id/store" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Amazon (Used)" />
+        <TextView android:textSize="9.0sp" android:textStyle="italic" android:ellipsize="end" android:id="@+id/shipping" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="UPS Standard (3-7 days)" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@id/linearLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2">
+        <TextView android:textStyle="bold" android:layout_gravity="right" android:id="@+id/totalPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$4.91" android:singleLine="true" />
+        <TextView android:textSize="9.0sp" android:textStyle="italic" android:layout_gravity="right" android:id="@+id/shippingIncl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(incl. shipping)" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

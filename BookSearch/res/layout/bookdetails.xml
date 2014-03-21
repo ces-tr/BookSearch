@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 	android:orientation="horizontal" 
+    			android:layout_width="fill_parent" 
+    			android:layout_height="fill_parent"
+    			android:baselineAligned="false"
+  				xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+
+        <TextView
+            android:id="@+id/booktitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="Título" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:text="autor"
+            android:textStyle="bold" />
+
+        <!--  TextView
+            android:id="@+id/format"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="formato"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/pubdate"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:text="FechaPub" /-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width= "0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1.14" />
+    </LinearLayout>
+
+</LinearLayout>

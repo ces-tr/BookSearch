@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">TestBooks</string>
+
+    <string name="asd">asd</string>
+    <string name="api_key">QZQG4JCRSEWC5UZLPKAI</string>
+    <string name="base_url">http://www.campusbooks4less.com/</string>
+
+</resources>

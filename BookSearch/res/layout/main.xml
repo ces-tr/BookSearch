@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/linearLayout1" android:paddingTop="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/mainFindBooks" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Búsqueda" android:onClick="showSearch" />
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/mainBookstores" android:paddingTop="10.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Mis libros" android:onClick="listBookstores" />
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/mainAboutUs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Acerca de" android:onClick="aboutUs" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10.0sp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.38"
+            android:src="@drawable/images2" />
+    </LinearLayout>
+
+</LinearLayout>
